@@ -1,3 +1,211 @@
+body {
+    background-image: url("/img/bg.png");
+    background-repeat: repeat;
+    height: auto;
+}
 .navbar-inverse a {
     color: #fff;
 }
+
+#all-map, #mapCanvas{
+    max-width: 1200px;
+    min-height: 400px;
+    max-height: 600px;
+   min-width: 250px;
+}
+
+
+ #mapCanvas {
+     width: 500px;
+     height: 400px;
+     float: left;
+ }
+#infoPanel {
+    float: left;
+    margin-left: 10px;
+}
+#infoPanel div {
+    margin-bottom: 5px;
+}
+
+* {
+    font-family: 'Lora', serif;
+}
+
+.specific-problem {
+    display: none;
+}
+
+.problem-image img {
+    max-width: 90%;
+    border: 4px ridge gold;
+
+}
+
+.specific-problem p:first-of-type {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.specific-problem .problem-image {
+    color: crimson;
+}
+
+
+.confirmed-box,.unconfirmed-box {
+    border: 1px solid #898;
+    padding: 2px;
+}
+
+.confirm-now,.unconfirm-now {
+    cursor: pointer;
+}
+
+.decorative-border {
+
+    max-height: 60px;
+}
+
+.problem-category {
+    font-weight: bolder;
+    color: #777;
+}
+
+.right-menu a {
+    font-size: 1.3em;
+    color: #eee;
+}
+
+.right-menu a:hover {
+    color: #555;
+}
+
+.glyphicon-asterisk.glyphicon.glyphicon-asterisk{
+    color: crimson;
+    font-size: 0.66em;
+}
+
+.navbar {
+    background-color: #aaa;
+    min-height: 120px;
+}
+
+.navbar-brand img{
+    left: 5px;
+    max-width: 45%;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+.site-logo {
+    left: 50px;
+    max-width: 160px;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.the-booklet {
+    position: absolute;
+   margin: 0 auto;
+    width: 50%;
+    left: 25%;
+    top: 0;
+    z-index: 150;
+    background-color: #eee;
+    border: 1px solid #999;
+    max-width: 800px;
+    display: none;
+    padding: 30px;
+
+}
+
+.close-book {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    font-size: 1.7em;
+
+}
+
+.the-booklet img {
+        max-width: 90%;
+        display: inline-block;
+
+
+
+}
+
+.author {
+    display: none;
+}
+
+.confirmation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    display: inline-block;
+    max-width: 40%;
+    margin: 0;
+
+}
+
+.date-text {
+    display: inline-block;
+    text-align: left;
+    max-width: 40%;
+
+}
+
+#mapCanvas, #all-map  {
+
+    min-width: 250px;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 1200px;
+    min-height: 400px;
+    height: 650px;
+}
+#all-map {
+    max-width: 1700px;
+    height: 710px;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 860px) {
+    .specific-problem h2 {
+        margin-top: 100px;
+    }
+
+    .navbar-brand {
+        position: absolute;
+       top: 25px;
+        width: 150%;
+        min-width: 300px;
+        max-width: 400px;
+        display: block;
+    }
+
+}
+@media screen and (max-width: 1250px) {
+    #mapCanvas, #all-map {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar-brand {
+        left: 0;
+    }
+
+    .site-logo {
+        position: static;
+        float: right;
+    }
+}
+
