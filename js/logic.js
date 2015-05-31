@@ -32,6 +32,7 @@ $(function() {
 
             $("body").click(function() {
                 $(".the-booklet").fadeOut("slow");
+                $("body").scrollTop(0);
             })
         return false;
 
