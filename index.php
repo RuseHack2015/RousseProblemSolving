@@ -6,8 +6,9 @@ include_once("includes/header.html");
 ?>
 
 
-
 <div class="col-md-4 col-sm-10 col-xs-12">
+
+
 <ul class="list-group">
 
     <?php

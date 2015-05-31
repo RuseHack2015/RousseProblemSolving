@@ -30,7 +30,11 @@ $(function() {
 
 
             $("body").click(function() {
-                $(".the-booklet").fadeOut('slow').remove();
+                var bookletHeight = $(".the-booklet").height();
+
+                $(".the-booklet").fadeOut('slow').children().remove();
+
+                $("body").css({"max-height" : $("body").height() + 200 - bookletHeight ,'overflow': 'hidden'})
             })
         return false;
 
