@@ -25,6 +25,7 @@ $(function() {
 
         $(".the-booklet").load('/includes/booklet.html',function(data) {
             $(".the-booklet").fadeIn("slow");
+            var s = skrollr.init();
 
         });
 
